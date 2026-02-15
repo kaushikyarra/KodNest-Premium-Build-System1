@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Showcase - KodNest Premium Build System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+    <div class="layout-container">
+        <!-- TOP BAR -->
+        <header class="top-bar">
+            <div class="top-bar__project">KodNest Premium Build System</div>
+            <div class="top-bar__progress">Component Showcase</div>
+            <div class="top-bar__status status--shipped">Live</div>
+        </header>
+
+        <!-- CONTEXT HEADER -->
+        <section class="context-header">
+            <h1 class="context-header__title">Component Showcase</h1>
+            <p class="context-header__subtitle">All components in action, demonstrating the calm and coherent design
+                system.</p>
+        </section>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <div class="primary-workspace">
+
+                <!-- Buttons -->
+                <div class="card">
+                    <h2 class="card__title">Buttons</h2>
+                    <div class="card__content">
+                        <div style="margin-bottom: 24px;">
+                            <p class="text-small text-muted mb-sm">Primary Buttons</p>
+                            <div class="btn-group">
+                                <button class="btn btn-primary">Primary Action</button>
+                                <button class="btn btn-primary btn-small">Small Primary</button>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 24px;">
+                            <p class="text-small text-muted mb-sm">Secondary Buttons</p>
+                            <div class="btn-group">
+                                <button class="btn btn-secondary">Secondary Action</button>
+                                <button class="btn btn-secondary btn-small">Small Secondary</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p class="text-small text-muted mb-sm">Block Button</p>
+                            <button class="btn btn-primary btn-block">Full Width Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Elements -->
+                <div class="card">
+                    <h2 class="card__title">Form Elements</h2>
+                    <div class="card__content">
+                        <div class="input-group">
+                            <label class="input-label">Project Name</label>
+                            <input type="text" class="input" placeholder="Enter your project name">
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">Description</label>
+                            <input type="text" class="input" placeholder="Brief description of your project">
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">URL</label>
+                            <input type="url" class="input" placeholder="https://example.com">
+                        </div>
+
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <div class="card">
+                    <h2 class="card__title">Card Variations</h2>
+                    <div class="card__content">
+                        <div class="card">
+                            <h3 class="card__title">Nested Card Example</h3>
+                            <p class="card__content">Cards can be nested and maintain consistent spacing and borders.
+                                This creates visual hierarchy without shadows or gradients.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card__title">Another Card</h3>
+                            <p class="card__content">Simple, clean, and predictable. Every card follows the same
+                                pattern.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prompt Box -->
+                <div class="card">
+                    <h2 class="card__title">Prompt Box</h2>
+                    <div class="card__content">
+                        <p class="text-small text-muted mb-sm">Used for displaying copyable code or prompts</p>
+                        <div class="prompt-box">
+                            <div class="prompt-box__content">npm install kodnest-design-system
+                                git clone https://github.com/kaushikyarra/kodnest-premium-build-system.git</div>
+                        </div>
+                        <button class="btn btn-secondary btn-small">Copy to Clipboard</button>
+                    </div>
+                </div>
+
+                <!-- Status Badges -->
+                <div class="card">
+                    <h2 class="card__title">Status Badges</h2>
+                    <div class="card__content">
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <div class="top-bar__status status--not-started">Not Started</div>
+                            <div class="top-bar__status status--in-progress">In Progress</div>
+                            <div class="top-bar__status status--shipped">Shipped</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Error State -->
+                <div class="card">
+                    <h2 class="card__title">Error State</h2>
+                    <div class="card__content">
+                        <div class="error-state">
+                            <div class="error-state__title">Unable to save changes</div>
+                            <div class="error-state__message">The project name cannot be empty. Please provide a valid
+                                name before saving.</div>
+                            <div class="error-state__action">Enter a project name in the field above and try again.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Empty State -->
+                <div class="card">
+                    <h2 class="card__title">Empty State</h2>
+                    <div class="card__content">
+                        <div class="empty-state">
+                            <div class="empty-state__title">No items to display</div>
+                            <div class="empty-state__message">You haven't created any items yet. Get started by creating
+                                your first one.</div>
+                            <button class="btn btn-primary">Create First Item</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typography Showcase -->
+                <div class="card">
+                    <h2 class="card__title">Typography in Context</h2>
+                    <div class="card__content">
+                        <h1>This is a Heading 1</h1>
+                        <p>Body text follows with generous line-height and maximum width for readability. The serif
+                            headings create hierarchy while the sans-serif body maintains clarity.</p>
+
+                        <h2>This is a Heading 2</h2>
+                        <p>Consistent spacing between elements creates rhythm. No random margins or padding values.</p>
+
+                        <h3>This is a Heading 3</h3>
+                        <p class="text-muted">Muted text is used for secondary information that supports the primary
+                            content.</p>
+
+                        <p class="text-small">Small text is used for metadata, timestamps, or supplementary details.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SECONDARY PANEL -->
+            <aside class="secondary-panel">
+                <h3 class="secondary-panel__title">Component Guidelines</h3>
+                <p class="secondary-panel__text">All components use the same spacing scale, border radius, and
+                    transition timing. Consistency is key.</p>
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-small btn-block">View Documentation</button>
+                    <button class="btn btn-secondary btn-small btn-block">Download CSS</button>
+                </div>
+
+                <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--color-border);">
+                    <p class="text-small text-muted">Design System Version</p>
+                    <p class="text-small" style="font-weight: 600;">v1.0.0</p>
+                </div>
+            </aside>
+        </main>
+
+        <!-- PROOF FOOTER -->
+        <footer class="proof-footer">
+            <div class="proof-footer__title">Component Validation</div>
+            <div class="proof-checklist">
+                <label class="proof-checklist__item">
+                    <input type="checkbox" class="proof-checklist__checkbox" checked>
+                    <span>Buttons Tested</span>
+                </label>
+                <label class="proof-checklist__item">
+                    <input type="checkbox" class="proof-checklist__checkbox" checked>
+                    <span>Forms Validated</span>
+                </label>
+                <label class="proof-checklist__item">
+                    <input type="checkbox" class="proof-checklist__checkbox" checked>
+                    <span>States Verified</span>
+                </label>
+                <label class="proof-checklist__item">
+                    <input type="checkbox" class="proof-checklist__checkbox" checked>
+                    <span>Responsive Checked</span>
+                </label>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

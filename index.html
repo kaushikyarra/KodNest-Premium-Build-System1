@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KodNest Premium Build System - Design System Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+  <div class="layout-container">
+    <!-- TOP BAR -->
+    <header class="top-bar">
+      <div class="top-bar__project">KodNest Premium Build System</div>
+      <div class="top-bar__progress">Design System v1.0</div>
+      <div class="top-bar__status status--shipped">Documentation</div>
+    </header>
+
+    <!-- CONTEXT HEADER -->
+    <section class="context-header">
+      <h1 class="context-header__title">Design System Documentation</h1>
+      <p class="context-header__subtitle">A calm, intentional, and coherent design system for serious B2C product companies.</p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="primary-workspace">
+        
+        <!-- Design Philosophy -->
+        <div class="card">
+          <h2 class="card__title">Design Philosophy</h2>
+          <div class="card__content">
+            <p><strong>Calm, Intentional, Coherent, Confident</strong></p>
+            <p>This design system is built for serious B2C product companies. It avoids flashy, loud, or playful aesthetics in favor of clarity, consistency, and confidence.</p>
+            <ul style="margin-left: 24px; margin-top: 16px;">
+              <li>No gradients, no glassmorphism, no neon colors</li>
+              <li>No animation noise or excessive motion</li>
+              <li>Maximum 4 colors across the entire system</li>
+              <li>Generous whitespace as a design element</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Color System -->
+        <div class="card">
+          <h2 class="card__title">Color System</h2>
+          <div class="card__content">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 16px;">
+              <div>
+                <div style="width: 100%; height: 80px; background-color: #F7F6F3; border: 1px solid #D4D2CC; border-radius: 4px; margin-bottom: 8px;"></div>
+                <strong>Background</strong><br>
+                <code style="font-size: 14px;">#F7F6F3</code>
+              </div>
+              <div>
+                <div style="width: 100%; height: 80px; background-color: #111111; border-radius: 4px; margin-bottom: 8px;"></div>
+                <strong>Primary Text</strong><br>
+                <code style="font-size: 14px;">#111111</code>
+              </div>
+              <div>
+                <div style="width: 100%; height: 80px; background-color: #8B0000; border-radius: 4px; margin-bottom: 8px;"></div>
+                <strong>Accent (Deep Red)</strong><br>
+                <code style="font-size: 14px;">#8B0000</code>
+              </div>
+              <div>
+                <div style="width: 100%; height: 80px; background-color: #2D5016; border-radius: 4px; margin-bottom: 8px;"></div>
+                <strong>Success (Muted Green)</strong><br>
+                <code style="font-size: 14px;">#2D5016</code>
+              </div>
+              <div>
+                <div style="width: 100%; height: 80px; background-color: #8B6914; border-radius: 4px; margin-bottom: 8px;"></div>
+                <strong>Warning (Muted Amber)</strong><br>
+                <code style="font-size: 14px;">#8B6914</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="card">
+          <h2 class="card__title">Typography</h2>
+          <div class="card__content">
+            <div style="margin-bottom: 24px;">
+              <h1 style="margin-bottom: 8px;">Heading 1 - Crimson Pro Serif</h1>
+              <p class="text-small text-muted">48px, line-height 1.2, letter-spacing -0.02em</p>
+            </div>
+            <div style="margin-bottom: 24px;">
+              <h2 style="margin-bottom: 8px;">Heading 2 - Crimson Pro Serif</h2>
+              <p class="text-small text-muted">32px, line-height 1.2, letter-spacing -0.01em</p>
+            </div>
+            <div style="margin-bottom: 24px;">
+              <h3 style="margin-bottom: 8px;">Heading 3 - Crimson Pro Serif</h3>
+              <p class="text-small text-muted">24px, line-height 1.2</p>
+            </div>
+            <div style="margin-bottom: 24px;">
+              <p>Body text - Inter Sans-Serif, 16px, line-height 1.7. Maximum width of 720px for optimal readability. Clean, generous spacing between lines creates a calm reading experience.</p>
+              <p class="text-small text-muted">16px, line-height 1.7, max-width 720px</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spacing System -->
+        <div class="card">
+          <h2 class="card__title">Spacing System</h2>
+          <div class="card__content">
+            <p>Consistent 8px-based scale. Never use random values like 13px or 27px.</p>
+            <div style="margin-top: 24px;">
+              <div style="margin-bottom: 16px;">
+                <div style="width: 8px; height: 8px; background-color: #8B0000; display: inline-block;"></div>
+                <span style="margin-left: 16px;"><strong>XS:</strong> 8px</span>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <div style="width: 16px; height: 16px; background-color: #8B0000; display: inline-block;"></div>
+                <span style="margin-left: 16px;"><strong>SM:</strong> 16px</span>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <div style="width: 24px; height: 24px; background-color: #8B0000; display: inline-block;"></div>
+                <span style="margin-left: 16px;"><strong>MD:</strong> 24px</span>
+              </div>
+              <div style="margin-bottom: 16px;">
+                <div style="width: 40px; height: 40px; background-color: #8B0000; display: inline-block;"></div>
+                <span style="margin-left: 16px;"><strong>LG:</strong> 40px</span>
+              </div>
+              <div>
+                <div style="width: 64px; height: 64px; background-color: #8B0000; display: inline-block;"></div>
+                <span style="margin-left: 16px;"><strong>XL:</strong> 64px</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Layout Structure -->
+        <div class="card">
+          <h2 class="card__title">Global Layout Structure</h2>
+          <div class="card__content">
+            <p>Every page follows this consistent structure:</p>
+            <ol style="margin-left: 24px; margin-top: 16px; line-height: 1.8;">
+              <li><strong>Top Bar:</strong> Project name (left), Progress indicator (center), Status badge (right)</li>
+              <li><strong>Context Header:</strong> Large serif headline, 1-line subtext, clear purpose</li>
+              <li><strong>Primary Workspace (70%):</strong> Main product interaction area</li>
+              <li><strong>Secondary Panel (30%):</strong> Step explanation, prompt box, action buttons</li>
+              <li><strong>Proof Footer:</strong> Persistent checklist for validation</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Component Rules -->
+        <div class="card">
+          <h2 class="card__title">Component Rules</h2>
+          <div class="card__content">
+            <p><strong>Buttons:</strong></p>
+            <div class="btn-group" style="margin-top: 16px; margin-bottom: 24px;">
+              <button class="btn btn-primary">Primary Button</button>
+              <button class="btn btn-secondary">Secondary Button</button>
+              <button class="btn btn-secondary btn-small">Small Button</button>
+            </div>
+            
+            <p><strong>Inputs:</strong></p>
+            <div class="input-group" style="margin-top: 16px;">
+              <label class="input-label">Input Label</label>
+              <input type="text" class="input" placeholder="Clean borders, clear focus state">
+            </div>
+
+            <p><strong>Cards:</strong> Subtle border, no drop shadows, balanced padding</p>
+          </div>
+        </div>
+
+        <!-- Interaction Rules -->
+        <div class="card">
+          <h2 class="card__title">Interaction Rules</h2>
+          <div class="card__content">
+            <ul style="margin-left: 24px;">
+              <li>Transitions: 150–200ms duration</li>
+              <li>Timing function: ease-in-out</li>
+              <li>No bounce effects</li>
+              <li>No parallax scrolling</li>
+              <li>Subtle, intentional hover states</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Error & Empty States -->
+        <div class="card">
+          <h2 class="card__title">Error & Empty States</h2>
+          <div class="card__content">
+            <div class="error-state">
+              <div class="error-state__title">Something went wrong</div>
+              <div class="error-state__message">The connection to the server timed out. This usually happens when the network is slow or unavailable.</div>
+              <div class="error-state__action">Try refreshing the page or checking your internet connection.</div>
+            </div>
+
+            <div class="empty-state">
+              <div class="empty-state__title">No projects yet</div>
+              <div class="empty-state__message">Create your first project to get started.</div>
+              <button class="btn btn-primary">Create Project</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECONDARY PANEL -->
+      <aside class="secondary-panel">
+        <h3 class="secondary-panel__title">Using This System</h3>
+        <p class="secondary-panel__text">Link the design-system.css file in your HTML and use the predefined classes and CSS variables.</p>
+        
+        <div class="prompt-box">
+          <div class="prompt-box__content">&lt;link rel="stylesheet" href="design-system.css"&gt;</div>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn btn-secondary btn-small btn-block">View Components</button>
+          <button class="btn btn-secondary btn-small btn-block">Copy CSS Variables</button>
+        </div>
+      </aside>
+    </main>
+
+    <!-- PROOF FOOTER -->
+    <footer class="proof-footer">
+      <div class="proof-footer__title">Design System Checklist</div>
+      <div class="proof-checklist">
+        <label class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" checked>
+          <span>Color System Defined</span>
+        </label>
+        <label class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" checked>
+          <span>Typography Established</span>
+        </label>
+        <label class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" checked>
+          <span>Spacing Scale Set</span>
+        </label>
+        <label class="proof-checklist__item">
+          <input type="checkbox" class="proof-checklist__checkbox" checked>
+          <span>Components Documented</span>
+        </label>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
